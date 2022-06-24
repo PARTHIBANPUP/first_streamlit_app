@@ -20,12 +20,12 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 streamlit.dataframe(fruits_to_show)
 
 streamlit.header("Fruityvice Fruit Advice!")
-fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
+fruit_choice = streamlit.text_input('What fruit would you like information about?','jackfruit')
 streamlit.write('The user entered ', fruit_choice)
 
 
 import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+ "Apple")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+ "jackfruit")
 
 #json response and normalization 
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
@@ -40,7 +40,7 @@ my_data_rows = my_cur.fetchall()
 streamlit.header("the fruit load list contains:")
 streamlit.dataframe(my_data_rows)
  
- add_my_fruit = fruit_choice = streamlit.write('What fruit would you like to add?','Jackfruit')
+
 
 
 
