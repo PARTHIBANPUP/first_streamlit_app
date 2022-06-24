@@ -34,7 +34,7 @@ streamlit.dataframe(fruityvice_normalized)
 
 
 import snowflake.connector
-streamlit.write('thanks for adding', Jackfruit)
+add_my_fruit = streamlit.write('thanks for adding', Jackfruit)
 my_cur.execute("insert into fruit_load_list values ('from streamlit')");
 
 
