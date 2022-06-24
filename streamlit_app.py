@@ -1,4 +1,4 @@
-#import streamlit
+import streamlit
 streamlit.title('My Parents new healthy diner')
 streamlit.header('BREAKFAST favourites')
 streamlit.text('🥣 omega 3 and oatmeal')
